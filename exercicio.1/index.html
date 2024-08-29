@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Mundo Pet</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+    <aside>
+        <img src="./img/Logo.svg" alt="logotipo do Mundo Pet">
+        <nav>
+            <ul>
+                <li class="menu-item-destacado">
+                    <a href="#">Publicar</a>
+                </li>
+                <li>
+                    <img src="./img/feed.svg" alt="feed">
+                    <a href="#">Feed</a>
+                </li>
+                <li>
+                    <img src="./img/cat.svg" alt="perfil">
+                    <a href="#">Perfil</a>
+                </li>
+                <li>
+                    <img src="./img/info.svg" alt="sobre nós">
+                    <a href="#">Sobre nós</a>
+                </li>
+                <li>
+                    <img src="./img/logout.svg" alt="sair">
+                    <a href="#">Sair</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div class="conteiner-imagem">
+            <img class="imagem" src="./img/cao_shelby.jpg" alt="cachorro chamado Shelby">
+            <button>
+                Carregar imagem
+                <img src="./img/upload.svg" alt="carregar imagem">
+            </button>
+            <div class="rotulo-nome-arquivo">
+                <p>imagem_do_shelby.jpg</p>
+                <img src="./img/close.svg" alt="limpar imagem">
+            </div>
+        </div>
+        <div class="conteiner-formulario">
+            <h2>Nova foto</h2>
+            <form>
+                <div class="conteiner-formulario-campo">
+                    <label for="titulo-imagem">Título da foto</label>
+                    <input type="text" name="titulo-imagem" id="titulo-imagem" value="Cachorro Shelby">
+                </div>
+                <div class="conteiner-formulario-campo">
+                    <label for="descricao-imagem">Descrição</label>
+                    <textarea name="descricao-imagem" id="descricao-imagem">
+Shelby é um cachorro vira-lata, fedido que odeia tomar banho. Ele é branco com manchas pretas e alguns detalhes marrons em torno dos olhos. Ele tem vários apelidos: Nêni, Fidido, Cheiroso, Boquinha de Cemitério, Shelby Chatobrian, etc.
+                    </textarea>
+                </div>
+                <div class="conteiner-formulario-campo">
+                    <label for="etiqueta-imagem">Hashtags</label>
+                    <input type="text" name="etiqueta-imagem" id="etiqueta-imagem" value="Cachorro">
+                    <ul class="lista-etiqueta-imagem">
+                        <li>
+                            <a href="#">Vira-lata</a>
+                            <img src="./img/close_tag.svg" alt="eliminar tag">
+                        </li>
+                        <li>
+                            <a href="#">Shelby</a>
+                            <img src="./img/close_tag.svg" alt="eliminar tag">
+                        </li>
+                    </ul>
+                </div>
+            </form>
+            <div class="conteiner-botao">
+                <button class="botao-descartar">
+                    Descartar
+                    <img src="./img/trash.svg" alt="lixeira">
+                </button>
+                <button class="botao-publicar">
+                    Publicar
+                    <img src="./img/arrow_forward.svg" alt="publicar">
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

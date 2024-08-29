@@ -40,13 +40,14 @@
     </aside>
     <main>
         <div class="conteiner-imagem">
-            <img class="imagem" src="./img/cao_shelby.jpg" alt="cachorro chamado Shelby">
-            <button>
+            <img id="imagem" class="imagem" src="./img/cao_shelby.jpg" alt="cachorro chamado Shelby">
+            <button id="botao-carregar-imagem">
                 Carregar imagem
                 <img src="./img/upload.svg" alt="carregar imagem">
             </button>
+            <input type="file" name="arquivo-imagem" id="arquivo-imagem">
             <div class="rotulo-nome-arquivo">
-                <p>imagem_do_shelby.jpg</p>
+                <p id="nome-imagem">imagem_do_shelby.jpg</p>
                 <img src="./img/close.svg" alt="limpar imagem">
             </div>
         </div>
@@ -90,5 +91,6 @@ Shelby é um cachorro vira-lata, fedido que odeia tomar banho. Ele é branco com
             </div>
         </div>
     </main>
+    <script src="codigo.js"></script>
 </body>
 </html>

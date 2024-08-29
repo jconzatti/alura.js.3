@@ -104,6 +104,10 @@ main {
     font-size: 18px;
 }
 
+#arquivo-imagem{
+    display: none;
+}
+
 .rotulo-nome-arquivo {
     color: var(--cor-texto);
     display: flex;
@@ -115,6 +119,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 420px;
 }
 
 .conteiner-formulario h2 {
@@ -141,8 +146,7 @@ main {
 }
 
 .conteiner-formulario-campo input, textarea {
-    min-width: 300px;
-    width: 400px;
+    width: 100%;
     border-radius: 4px;
     padding: 8px 16px;
     color: var(--cor-secundaria);
